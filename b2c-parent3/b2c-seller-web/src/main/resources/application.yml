@@ -1,0 +1,18 @@
+server:
+  port: 9002
+dubbo:
+  application:
+    name: b2c-seller-web
+  registry:
+    address: zookeeper://192.168.56.16:2181
+spring:
+  thymeleaf:
+    cache: false
+    #保存上传文件的服务器地址
+
+  servlet:
+    multipart:
+      max-request-size: 52128800
+file:
+  server:
+    path: http://192.168.56.16/
